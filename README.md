@@ -2,6 +2,17 @@
 
 ## CURRENTLY DEVELOPMENT OF THIS APP IS INPROGRESS.
 
+#### Screenshots:
+
+![alt text](./screenshots/home-page.png)
+
+![alt text](./screenshots/add-task-1.png)
+
+![alt text](./screenshots/add-task-2.png)
+
+
+#### Data:
+
 psql -h localhost -p 5432 -U postgres
 
 \l
@@ -187,3 +198,16 @@ task_management=# TABLE AUDIT_LOG;
  log_id | task_id | field_name | old_value | new_value | changed_by | change_date
 --------+---------+------------+-----------+-----------+------------+-------------
 (0 rows)
+
+npm start
+node server.js 
+Server running on port 5000
+
+Compiled successfully!
+
+You can now view task-management-app in the browser.
+
+  Local:            http://localhost:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
