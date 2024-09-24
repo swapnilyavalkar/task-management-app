@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Styling for the app title */
+.app-title {
+  color: #2a9d8f;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Container to handle table overflow without horizontal scrolling */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+/* Styling for table headers */
+table th {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #2a9d8f; /* Text color matching the app title */
+  padding: 12px; /* Adjust padding for better spacing */
+  text-align: left; /* Align text to the left */
+  font-weight: bold;
+  border-bottom: 2px solid #ccc; /* Add bottom border to separate headers */
+}
+
+/* Styling for table cells */
+table td {
+  white-space: normal; /* Allow text to wrap within the cell */
+  word-wrap: break-word; /* Ensure long words break within the cell */
+  padding: 10px; /* Cell padding */
+  border-bottom: 1px solid #eee; /* Light bottom border to separate rows */
+}
+
+/* Flexbox container for status boxes */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem; /* Add spacing between the boxes */
+  margin-bottom: 2rem; /* Add space below the status boxes */
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Make it a vertical layout on smaller screens */
+  }
+}
+
+/* Styling for the card boxes */
+.card-box {
+  background-color: #f7f7f7; /* Light gray background */
+  color: #333; /* Text color */
+  padding: 1.5rem; /* Add padding inside the boxes */
+  margin: 1rem; /* Space between boxes */
+  min-width: 200px; /* Minimum width of the boxes */
+  text-align: center; /* Center the text */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 8px; /* Add slight rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+/* Styling for buttons */
+button {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+button:hover {
+  background-color: #218f76; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 10px; /* Reduce button size on smaller screens */
+    padding: 4px 8px; /* Reduce padding for smaller buttons */
+  }
+}
+
+/* Specific styling to ensure the entire table is displayed within the viewport without horizontal scrolling */
+.App table th,
+.App table td {
+  white-space: nowrap; /* Prevent text from overflowing */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Truncate text with ellipsis if it overflows */
+}
+
+@media (max-width: 768px) {
+  .App table th,
+  .App table td {
+    white-space: normal; /* Allow wrapping on smaller screens */
+    word-wrap: break-word; /* Ensure long words break within the cell */
+    max-width: 100px; /* Limit width for better readability */
+  }
+}
+
+/* Button inside the table */
+table button {
+  font-size: 10px;
+  padding: 3px 8px;
+}
+
+/* Ensure all card boxes have the same size */
+.card-box {
+  flex-grow: 1;
+  min-height: 100px; /* Ensure minimum height for uniformity */
+}
+
+@media (max-width: 768px) {
+  .card-box {
+    min-width: 100%; /* Ensure the boxes take full width on smaller screens */
+  }
+}
+
+/* Set a fixed width to prevent text overflow in narrow columns */
+.table-container th,
+.table-container td {
+  max-width: 150px; /* Limit width to prevent overflow */
+}
+
+@media (max-width: 768px) {
+  .table-container th,
+  .table-container td {
+    max-width: 100px; /* Adjust max-width for smaller screens */
+  }
+}
+
+/* Floating Action Button */
+.fab-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .fab-button {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px; /* Adjust button size for smaller screens */
+  }
+}
