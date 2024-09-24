@@ -163,11 +163,8 @@ task_management-# \dt audit_log
 task_management=# TABLE users;
  user_id |  name   |        email        | password | user_role |         created_at
 ---------+---------+---------------------+----------+-----------+----------------------------
-       1 | Yash    | yash@example.com    | password | user      | 2024-09-22 14:17:44.637547
-       2 | Swapnil | swapnil@example.com | password | user      | 2024-09-22 14:17:44.637547
-       3 | Arun    | arun@example.com    | password | user      | 2024-09-22 14:17:44.637547
-       4 | Ana     | ana@example.com     | password | user      | 2024-09-22 14:17:44.637547
-(4 rows)
+       1 | ABC    | ABC@example.com    | "" | user      | 2024-09-22 14:17:44.637547
+       2 | XYZ | XYZ@example.com | "" | user      | 2024-09-22 14:17:44.637547
 
 
 task_management=# TABLE TASKS;
